@@ -9,19 +9,46 @@
   --heading-color: #212121;
 }
 
+/* Introdus din video - posibil sa nu se potriveasca cu tema mea */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1600px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 215px;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   font-family: var(--text-font-family);
   color: #212121;
 }
 
 ul {
   list-style-type: none;
+}
+
+.section,
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.header-navigation {
+  background: #ececec;
 }
 
 .logo-part1 {
@@ -71,6 +98,10 @@ ul {
   color: #2196f3;
 }
 
+.main-menu li {
+  display: inline-block;
+}
+
 .top-contacts {
   font-family: "Roboto";
   font-style: normal;
@@ -87,24 +118,35 @@ ul {
 }
 
 .top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #2f303a;
+  height: 600px;
 }
 
 .brand-slogan {
   color: #fff;
+  text-align: center;
+  width: 680px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
 }
 .top-button {
   background-color: #2196f3;
+  width: 200px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
+  line-height: 50px;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  margin-top: 30px;
+  border-radius: 4px;
 }
 
 .h2 {
@@ -122,47 +164,91 @@ ul {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
 
+.how-we-work-subtitle {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
 .about-us-text {
+  display: inline-flex;
+  gap: 30px;
+  padding-bottom: 94px;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.about-us-text p {
+  flex-basis: 270px;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.what-we-do-img {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .our-team {
   background: #f5f4fa;
 }
 
+.people-our-team {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  height: 368px;
+}
+
 .name {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.03em;
+  background-color: #fff;
   color: #212121;
 }
 
 .job-description {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.03em;
+  background-color: #fff;
   color: #757575;
 }
 
@@ -196,10 +282,22 @@ ul {
 
 .filter-button {
   background: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
   border-radius: 4px;
+  border: none;
+  height: 38px;
+  padding: 6px 22px;
 }
 
 .filter-button:active {
   background: #2196f3;
   border-radius: 4px;
+}
+
+.filter-button:hover {
+  background: #2196f3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
 }
