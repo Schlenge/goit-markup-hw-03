@@ -20,13 +20,6 @@
   width: 1200px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 215px;
-}
-
 h1,
 h2,
 h3,
@@ -41,8 +34,7 @@ ul {
   list-style-type: none;
 }
 
-.section,
-.our-team {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -50,7 +42,15 @@ ul {
 .header-navigation {
   display: flex;
   align-items: center;
+  padding: 24px 0 24px 215px;
   background: #ececec;
+}
+
+.main-menu {
+  display: flex;
+  gap: 50px;
+  padding-left: 93px;
+  padding-right: 376px;
 }
 
 .logo-part1 {
@@ -100,13 +100,8 @@ ul {
   color: #2196f3;
 }
 
-.main-menu {
-  display: flex;
-  padding-left: 93px;
-  grid-area: 50px;
-}
-
 .top-contacts {
+  padding-left: 40px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -184,41 +179,58 @@ ul {
 }
 
 .what-we-do-section h5 {
-  display: inline-flex;
-  padding-top: 94px;
+  display: inline-block;
+  width: 270px;
+  height: 16px;
   font-weight: 700;
   font-size: 14px;
-  padding-left: 215px;
-  padding-bottom: 10px;
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
-.what-we-do-section p {
-  display: inline-flex;
-  padding-left: 215px;
+.what-we-do-section span {
+  display: inline-block;
+  width: 270px;
+  height: 70px;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-right: 30px;
+}
+
+.what-we-do-section {
+  padding-left: 215px;
+  width: 1600px;
 }
 
 .section-title {
-  display: flex;
-  justify-content: center;
   padding-top: 94px;
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
+  text-align: center;
+}
+
+/* clasa provizorie pana gasesc o solutie la centrarea "What we do"*/
+.title-section {
+  width: 1150px;
 }
 
 .what-we-do-img {
   display: flex;
-  justify-content: center;
   gap: 30px;
 }
 
 .our-team {
   background: #f5f4fa;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
 }
 
 .people-our-team {
